@@ -1,28 +1,31 @@
-const loginForm = document.getElementById('login');
-loginForm.addEventListener('submit', (event) => {
+// script.js
+document.getElementById("loginForm").addEventListener("submit", function(event) {
   event.preventDefault();
+  
+  // Get email and password
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
+  // You can perform validation here
 
-  // Perform client-side validation (optional)
-
-  // Send login request to backend
-  fetch('/login', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, password })
+  // Send the data to the backend for authentication
+  // Example AJAX request
+  // Replace the URL with your backend endpoint
+  fetch("your-backend-url/login", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email, password })
   })
-  .then(response => {
-    if (response.ok) {
-      // Redirect to user's page
-      window.location.href = '/user';
-    } else {
-      // Handle login failure
-      alert('Invalid email or password.');
-    }
+  .then(response => response.json())
+  .then(data => {
+      // Handle the response from the backend
+      console.log(data);
+      // Redirect the user to the next page if login successful
+      // window.location.href = "next-page.html";
   })
   .catch(error => {
-    console.error('Error:', error);
+      console.error("Error:", error);
   });
 });
