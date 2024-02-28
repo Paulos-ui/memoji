@@ -28,5 +28,6 @@ To register and start posting fun content, follow these steps:
 
 ------------
 
+![Memoji Logo](/images/memoji.jpg)
 
 Memoji ----- Make your world fun and full of laughter
