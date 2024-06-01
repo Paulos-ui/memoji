@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoji - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('/images/background.jpg'); /* Same background image as the login page */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .logo {
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 20px; /* Adjusted to the left side */
+            width: 70px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .navigation, .footer {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            background-color:rgb(120, 73, 73); /* Attractive blue color */
+        }
+        .navigation a, .footer a {
+            margin-right: 20px;
+            color: #fff; /* White color for links */
+            text-decoration: none;
+        }
+        .navigation a:hover, .footer a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .container {
+            max-width: 800px; /* Adjust as needed */
+            margin: 100px auto 50px; /* Adjusted margin to create space for navigation */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .post-content {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <img src="/images/memoji.jpg" alt="Memoji Logo" class="logo">
+    <div class="navigation">
+        <a href="home.html">Home</a>
+        <a href="memes.html">Memes</a>
+        <a href="post.html">Post</a>
+        <a href="profile.html">Profile</a>
+        <a href="login.html">Logout</a>
+    </div>
+    <div class="container">
+        <!-- Post feature -->
+        <div class="post">
+            <div class="post-content">
+                <p><strong>User1:</strong> Just had the funniest moment of my day! 😂</p>
+                <p>This app is amazing, I can't stop laughing! 🤣</p>
+                <p>Post and share </p>
+            </div>
+        </div>
+        <p></p>
+    </div>
+    <div class="footer">
+        <a href="home.html">Home</a>
+        <a href="memes.html">Memes</a>
+        <a href="post.html">Post</a>
+        <a href="profile.html">Profile</a>
+        <a href="login.html">Logout</a>
+    </div>
+ <!-- Footer -->
+ <footer>
+    <ul>
+        <li><a href="#privacy-policy">Privacy Policy</a></li>
+        <li><a href="#terms-of-service">Terms of Service</a></li>
+    </ul>
+    <p>&copy; Memoji. All rights reserved.</p>
+</footer>
+</body>
+</html>
